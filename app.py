@@ -1,10 +1,12 @@
 from flask import Flask, request, render_template
-
+import configparser
 import verifySignature
 from order import createorder
 import traceback
 
 app = Flask(__name__)
+config=configparser.ConfigParser()
+parser.read('resource/app.properties')
 app.config['SECRET_KEY'] = '<GET SECRET KEY FROM RAZORPAY PORTAL>'
 
 
