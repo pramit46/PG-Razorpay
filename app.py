@@ -5,7 +5,7 @@ from order import createorder
 import traceback
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '5c94782e54b41890a2895615f59365950efdaf60b84b6941'
+app.config['SECRET_KEY'] = '<GET SECRET KEY FROM RAZORPAY PORTAL>'
 
 
 @app.route('/callback/', methods=['POST', 'GET'])
