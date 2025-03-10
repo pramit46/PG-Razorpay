@@ -5,7 +5,7 @@ from order import createorder
 import traceback
 
 app = Flask(__name__)
-config=configparser.ConfigParser()
+parser=configparser.ConfigParser()
 parser.read('resource/app.properties')
 app.config['SECRET_KEY'] = '<GET SECRET KEY FROM RAZORPAY PORTAL>'
 
